@@ -1,0 +1,11 @@
+ssh root@ip
+dokku apps:create terere
+sudo dokku plugin:install https://github.com/dokku/dokku-mysql.git mysql
+dokku mysql:create terere-db
+dokku mysql:link terere-db terere
+ufw disable
+
+##Configurar git del app 
+git remote add dokku dokku@159.89.134.84:terere
+cat .git/config 
+git push dokku master

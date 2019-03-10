@@ -1,0 +1,52 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+
+.carousel {
+    position: relative;
+    height: 40%;
+    width: 100%;
+}
+
+#carousel-area {
+    margin-top: 0px;
+    overflow: hidden;
+    background: #2c3e50;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #f8f9fb;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #4cb450;
+    border: 1px solid transparent;
+    padding: .375rem .75r;
+    font-size: 1.5rem;
+    
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.btn:hover {
+    color: #ffffff;
+    text-decoration: none;
+    
+}
